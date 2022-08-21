@@ -1,10 +1,10 @@
 import Directory from '../../components/Directory/Directory';
 
-import hats from '../../images/hats.png';
-import jackets from '../../images/jackets.png';
-import mens from '../../images/men.png';
-import sneakers from '../../images/sneakers.png';
-import womens from '../../images/womens.png';
+import hats from '../../assets/hats.png';
+import jackets from '../../assets/jackets.png';
+import mens from '../../assets/men.png';
+import sneakers from '../../assets/sneakers.png';
+import womens from '../../assets/womens.png';
 
 const Home = () => {
 	const categories = [
