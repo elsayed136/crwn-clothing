@@ -1,37 +1,31 @@
 import Directory from '../../components/Directory/Directory';
 
-import hats from '../../assets/hats.png';
-import jackets from '../../assets/jackets.png';
-import mens from '../../assets/men.png';
-import sneakers from '../../assets/sneakers.png';
-import womens from '../../assets/womens.png';
-
 const Home = () => {
 	const categories = [
 		{
 			id: 1,
 			title: 'hats',
-			imageUrl: hats,
+			imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
 		},
 		{
 			id: 2,
 			title: 'jackets',
-			imageUrl: jackets,
+			imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
 		},
 		{
 			id: 3,
 			title: 'sneakers',
-			imageUrl: sneakers,
+			imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
 		},
 		{
 			id: 4,
 			title: 'womens',
-			imageUrl: womens,
+			imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
 		},
 		{
 			id: 5,
 			title: 'mens',
-			imageUrl: mens,
+			imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
 		},
 	];
 	return <Directory categories={categories} />;
