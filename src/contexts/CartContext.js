@@ -37,6 +37,7 @@ const clearCartItem = (cartItems, cartItemToClear) =>
 const CartContext = createContext({
 	isCartOpen: false,
 	setIsCartOpen: () => null,
+	toggleIsCartOpen: () => null,
 	cartItems: [],
 	cartCount: 0,
 	cartTotal: 0,
@@ -67,6 +68,8 @@ const CartProvider = ({ children }) => {
 		setCartTotal(newCartTotal);
 	}, [cartItems]);
 
+	const toggleIsCartOpen = () => setIsCartOpen(!isCartOpen);
+
 	const addItemToCart = productToAdd => {
 		setCartItems(addCartItem(cartItems, productToAdd));
 	};
@@ -82,6 +85,7 @@ const CartProvider = ({ children }) => {
 	const value = {
 		isCartOpen,
 		setIsCartOpen,
+		toggleIsCartOpen,
 		cartItems,
 		cartCount,
 		cartTotal,
