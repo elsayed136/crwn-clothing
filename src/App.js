@@ -4,10 +4,7 @@ import Navigation from './components/Navigation/Navigation';
 import { UserContext } from './contexts/UserContext';
 import Authentication from './pages/Authentication/Authentication';
 import Home from './pages/Home/Home';
-
-const Shop = () => {
-	return <h1>I am the shop page</h1>;
-};
+import Shop from './pages/Shop/Shop';
 
 const App = () => {
 	const { currentUser } = useContext(UserContext);
