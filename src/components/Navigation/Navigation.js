@@ -1,5 +1,5 @@
 import { Fragment, useContext } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import { ReactComponent as CrwnLogo } from '../../assets/crown.svg';
 import { CartContext } from '../../contexts/CartContext';
 import { UserContext } from '../../contexts/UserContext';
@@ -11,7 +11,7 @@ import {
 	NavigationContainer,
 	NavLink,
 	NavLinks,
-} from './Navigation.styles.js';
+} from './Navigation.styles';
 
 const Navigation = () => {
 	const { currentUser } = useContext(UserContext);
