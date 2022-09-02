@@ -2,7 +2,7 @@ import { useState } from 'react';
 import {
 	signInAuthUserWithEmailAndPassword,
 	signInWithGooglePopup,
-} from '../../utils/firebase/firebase';
+} from '../../utils/firebase/firebase.utils';
 import Button, { BUTTON_TYPE_CLASSES } from '../Button/Button';
 import FormInput from '../FormInput/FormInput';
 import { ButtonsContainer, SignInContainer } from './SignInForm.styles';

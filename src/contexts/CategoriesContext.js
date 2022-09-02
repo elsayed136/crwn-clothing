@@ -1,5 +1,5 @@
 import { createContext, useEffect, useReducer, useState } from 'react';
-import { getCategoriesAndDocuments } from '../utils/firebase/firebase';
+import { getCategoriesAndDocuments } from '../utils/firebase/firebase.utils';
 import { createAction } from '../utils/reducer/reducer.utils';
 
 const CATEGORIES_ACTION_TYPES = {
