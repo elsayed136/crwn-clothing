@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
 import Authentication from './pages/Authentication/Authentication';
 import Checkout from './pages/Checkout/Checkout';
@@ -22,7 +22,7 @@ const App = () => {
 		});
 
 		return unsubscribe;
-	}, []);
+	}, [dispatch]);
 	return (
 		<Routes>
 			<Route path='/' element={<Navigation />}>
