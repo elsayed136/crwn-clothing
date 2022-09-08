@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
-import { setCategories } from '../../store/categories/categoryActions';
+import { setCategories } from '../../store/categories/categoriesActions';
 import { getCategoriesAndDocuments } from '../../utils/firebase/firebase.utils';
 import CategoriesPreview from '../CategoriesPreview/CategoriesPreview';
 import Category from '../Category/Category';
